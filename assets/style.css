@@ -28,8 +28,6 @@
   }
 }
 
-
-
 #banner #slider {
   position: absolute;
   width: 250px;
@@ -39,6 +37,7 @@
   transform-style: preserve-3d;
   transform: perspective(1000px);
   animation: rotate 20s linear infinite;
+  z-index: 2;
 }
 
 .message {
@@ -83,23 +82,21 @@
   cursor: pointer;
 }
 
-#banner #content {
+#banner #model {
+  background-image: url(./images/girl.png);
+  width: 100%;
+  height: 85vh;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: min(1400px, 100vw);
-  height: max-content;
-  padding-bottom: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  left: 0;
+  background-size: auto 130%;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 /* Aplica a nova fonte em todo o banner */
 #banner {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #fff; /* Cor clara para destacar no fundo */
 }
 
@@ -116,4 +113,3 @@
   margin-top: 10px;
   transition: all 0.3s ease;
 }
-

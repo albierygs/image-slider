@@ -5,11 +5,10 @@
   overflow: hidden;
   position: relative;
   background: linear-gradient(135deg, #f08c8c, #8cd3f6, #c98ef8);
-  background-size: 400% 400%; /* Aumenta o tamanho do fundo para permitir o movimento */
-  animation: gradientShift 10s ease infinite; /* Animação para o gradiente */
+  background-size: 400% 400%;
+  animation: gradientShift 10s ease infinite;
 }
 
-/* Definindo a animação */
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -32,7 +31,7 @@
   position: absolute;
   width: 250px;
   height: 167px;
-  top: 10%;
+  top: 12%;
   left: calc(50% - 125px);
   transform-style: preserve-3d;
   transform: perspective(1000px);
@@ -94,21 +93,19 @@
   background-position: top center;
 }
 
-/* Aplica a nova fonte em todo o banner */
 #banner {
   font-family: "Quicksand", sans-serif;
-  color: #fff; /* Cor clara para destacar no fundo */
+  color: #fff;
 }
 
-/* Mensagem visível quando hover */
 .message {
   display: none;
   font-size: 16px;
   font-weight: 600;
   color: #ffffff;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sombra para destacar no gradiente */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.1); /* Leve fundo para leitura melhor */
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   margin-top: 10px;
   transition: all 0.3s ease;
